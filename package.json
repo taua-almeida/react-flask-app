@@ -1,0 +1,55 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.3.1",
+    "classnames": "2.2.6",
+    "headroom.js": "0.11.0",
+    "moment": "2.24.0",
+    "node-sass": "4.13.1",
+    "nouislider": "14.1.1",
+    "react": "^16.13.1",
+    "react-datetime": "2.16.3",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.3.1",
+    "react-icons": "^3.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.4.1",
+    "sweetalert2": "^9.10.10"
+  },
+  "devDependencies": {
+    "jquery": "3.4.1"
+  },
+  "scripts": {
+    "compile-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css",
+    "minify-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css --source-map true",
+    "install:clean": "del -rf node_modules/ && del -rf package-lock.json && npm install && npm start",
+    "start": "react-scripts start",
+    "start-api": "cd api && conda activate reactflask && python run.py",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
