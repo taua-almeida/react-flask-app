@@ -24,7 +24,7 @@
     "sweetalert2": "^9.10.10"
   },
   "devDependencies": {
-    "jquery": "3.4.1"
+    "jquery": "3.5.0"
   },
   "scripts": {
     "compile-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css",
